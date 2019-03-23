@@ -1,3 +1,6 @@
 #!/bin/sh -l
 
-sh -c "commitlint $*"
+set -e
+
+sh -c "npm ci || npm install"
+sh -c "npx commitlint $*"

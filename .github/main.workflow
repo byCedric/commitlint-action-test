@@ -5,6 +5,4 @@ workflow "Test Commitlint Action" {
 
 action "Test commits" {
   uses = "./action/"
-  runs = "debug"
-  secrets = ["EXPO_USERNAME"]
 }
